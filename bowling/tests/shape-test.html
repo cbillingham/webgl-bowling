@@ -1,0 +1,40 @@
+<!doctype html>
+    <!-- This web page is a QUnit test harness for our Shape object. -->
+<html>
+    <head>
+        <title>Shape Test</title>
+        <link rel="stylesheet"
+            href="http://code.jquery.com/qunit/qunit-1.14.0.css" />
+    </head>
+    <body>
+        <h1>Shape Test Suite</h1>
+
+        <!-- IDs are predefined by QUnit. -->
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+
+        <!-- jQuery and QUnit. -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+
+        <canvas id="canvas">
+            Sorry, your web browser does not appear to support
+            the <code>canvas</code> element, either.
+        </canvas>
+
+        <!-- The module being tested. -->
+        <script src="../../matrix/matrix.js"></script>
+        <script src="../../vector/vector.js"></script>
+        <script src="../glsl-utilities.js"></script> <!-- Necessary for using shapes.js-->
+        <script src="../shapes/shape.js"></script>
+        <script src="../shapes/cube.js"></script> <!-- Predefined objects for ease of testing -->
+        <script src="../shapes/icosahedron.js"></script>
+        <script src="../shapes/sphere.js"></script>
+
+        <!-- The tests themselves. -->
+        <script src="shape-test.js"></script>
+    </body>
+</html>
